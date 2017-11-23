@@ -6,6 +6,7 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 import java.awt.event.ActionListener;
@@ -50,7 +51,7 @@ public class Cctxl extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btnNewButton.setBounds(179, 200, 114, 23);
+		btnNewButton.setBounds(98, 194, 114, 23);
 		contentPane.add(btnNewButton);
 		
 		textField = new JTextField();
@@ -70,5 +71,17 @@ public class Cctxl extends JFrame {
 		JLabel label_1 = new JLabel("密码");
 		label_1.setBounds(65, 116, 54, 15);
 		contentPane.add(label_1);
+		
+		JButton btnNewButton_1 = new JButton("注册账号");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnNewButton_1.setBounds(260, 194, 114, 23);
+		contentPane.add(btnNewButton_1);
+		
+		JLabel lblNewLabel = new JLabel(new ImageIcon("image\\2.jpg"));
+		lblNewLabel.setBounds(326, 10, 106, 146);
+		contentPane.add(lblNewLabel);
 	}
 }
